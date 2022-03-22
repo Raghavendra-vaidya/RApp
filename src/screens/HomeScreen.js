@@ -13,6 +13,7 @@ const HomeScreen = ({navigation}) => {
       <Button
         title="Navigate to list"
         onPress={() => navigation.navigate('ListScreen')}
+        accessibilityLabel="listScreenID"
       />
       <View style={{width: 20, height: 20}}></View>
 
@@ -20,12 +21,14 @@ const HomeScreen = ({navigation}) => {
         title="Search something"
         onPress={() => navigation.navigate('SearchScreen')}
         color="#841584"
+        accessibilityLabel="searchScreenID"
       />
       <View style={{width: 20, height: 20}}></View>
 
       <Button
-        title="Tap me for an alert"
-        onPress={() => Alert.alert('Simple Button tapped')}
+        title="Login"
+        onPress={() => navigation.navigate('Login')}
+        accessibilityLabel="loginButtonID"
       />
     </View>
   );
