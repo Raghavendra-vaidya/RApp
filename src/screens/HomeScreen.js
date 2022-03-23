@@ -21,7 +21,6 @@ const HomeScreen = ({navigation}) => {
       <Button
         title="Search something"
         onPress={() => navigation.navigate('SearchScreen')}
-        color="#841584"
         accessibilityLabel="searchScreenID"
       />
       <View style={{width: 20, height: 20}}></View>
