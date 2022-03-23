@@ -18,6 +18,7 @@ const Login = () => {
           placeholder="Email..."
           placeholderTextColor="#EBF5FB"
           onChangeText={text => setEmail(text)}
+          accessibilityLabel="emailFieldID"
         />
       </View>
       <View style={styles.inputView}>
@@ -27,16 +28,23 @@ const Login = () => {
           placeholder="Password..."
           placeholderTextColor="#EBF5FB"
           onChangeText={text => setPassword(text)}
+          accessibilityLabel="passwordID"
         />
       </View>
       <TouchableOpacity>
-        <Text style={styles.forgot}>Forgot Password?</Text>
+        <Text style={styles.forgot} accessibilityLabel="forgotPasswordID">
+          Forgot Password?
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.loginBtn}>
-        <Text style={styles.loginText}>LOGIN</Text>
+        <Text style={styles.loginText} accessibilityLabel="loginButtonID">
+          LOGIN
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Text style={styles.loginText}>Signup</Text>
+        <Text style={styles.loginText} accessibilityLabel="signUpID">
+          Signup
+        </Text>
       </TouchableOpacity>
     </View>
   );

@@ -4,6 +4,7 @@ import {Button, View, Alert} from 'react-native';
 const HomeScreen = ({navigation}) => {
   return (
     <View
+      accessibilityLabel="viewID"
       style={{
         flex: 1,
         alignItems: 'center',
