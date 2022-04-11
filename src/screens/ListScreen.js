@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     paddingBottom: 2,
     fontSize: 14,
-    fontWeight: 'bold',
     backgroundColor: 'rgba(247,247,247,1.0)',
   },
   item: {

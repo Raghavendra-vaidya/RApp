@@ -15,20 +15,30 @@ const HomeScreen = ({navigation}) => {
         title="Navigate to list"
         onPress={() => navigation.navigate('ListScreen')}
         accessibilityLabel="listScreenID"
+        color="#787A7B"
       />
       <View style={{width: 20, height: 20}}></View>
 
-      <Button
-        title="Search something"
-        onPress={() => navigation.navigate('SearchScreen')}
-        accessibilityLabel="searchScreenID"
-      />
+      <View
+        style={{
+          borderColor: '#A2DAF7',
+          borderWidth: 1,
+        }}>
+        <Button
+          title="Search something"
+          onPress={() => navigation.navigate('SearchScreen')}
+          accessibilityLabel="searchScreenID"
+          color="#787A7B"
+        />
+      </View>
+
       <View style={{width: 20, height: 20}}></View>
 
       <Button
         title="Login"
         onPress={() => navigation.navigate('Login')}
         accessibilityLabel="loginButtonID"
+        color="#787A7B"
       />
     </View>
   );
